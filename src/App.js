@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./App.css";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 
-import Header from "./Header";
 import Gradient from "./Gradient";
 import NotFound from "./NotFound";
 
