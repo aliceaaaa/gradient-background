@@ -69,13 +69,13 @@ class App extends Component {
           type="text"
           value={this.state.color1}
           placeholder="e.g. #000FFF"
-          onChange={e => this.updateInput1(e.currentTarget.value)}
+          onChange={e => this.updateInput1(e.target.value)}
         />
         <input
           type="text"
           value={this.state.color2}
           placeholder="e.g. #000FFF"
-          onChange={e => this.updateInput2(e.currentTarget.value)}
+          onChange={e => this.updateInput2(e.target.value)}
         />
       </Body>
     );
