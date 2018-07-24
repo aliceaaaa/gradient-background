@@ -1,6 +1,6 @@
 export default {
 root: {
-fontFamily: "Arial",
+  fontFamily: "Arial",
   color: "#FFFFFF",
   webkitTextStroke: "1px black"
   }
