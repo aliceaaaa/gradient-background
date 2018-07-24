@@ -1,17 +1,27 @@
 import React from "react";
 import { Box } from "grid-styled";
+import React from 'react';
+import PropTypes from "prop-types";
+import classNames from 'classnames';
+import { withStyles, } from 'src/withStyles;
+import styles from 'src/HeadStyles';
 
-const text = {
-  fontFamily: "Arial",
-  color: "#FFFFFF",
-  webkitTextStroke: "1px black"
-};
+const Header = ({ className: propClassName, classes, disabled, variant, ...other }) => {
 
-const Header = () => (
-  <Box mb={2} py={2}>
-    <h1 style={text}>Change background color!</h1>
-    <h4 style={text}>Please, enter your colors:</h4>
-  </Box>
-);
+  const className = classNames(
+    classes.root,
+    {
+      [classes[variant]]: variant,
+    },
+    propClassName
+  );
 
+  return (
+  <div className={ className } { ...other }>
+    <h1>Change background color!</h1>
+    <h4>Please, enter your colors:</h4>
+  </div>
+ 
+    };
+    
 export default Header;
