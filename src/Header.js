@@ -1,12 +1,10 @@
 import React from "react";
-import { Box } from "grid-styled";
-import React from 'react';
 import PropTypes from "prop-types";
 import classNames from 'classnames';
 import { withStyles, } from 'src/withStyles;
 import styles from 'src/HeadStyles';
 
-const Header = ({ className: propClassName, classes, disabled, variant, ...other }) => {
+const Header = ({ className: propClassName, classes, variant, ...other }) => {
 
   const className = classNames(
     classes.root,
